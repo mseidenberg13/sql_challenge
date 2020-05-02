@@ -9,6 +9,8 @@ salaries.salary
 FROM employees
 JOIN salaries ON employees.emp_no=salaries.emp_no;
 
+
+
 --List first name, last name, and hire date for employees who were hired in 1986.
 
 SELECT first_name,
@@ -85,3 +87,7 @@ SELECT last_name, COUNT(*) AS frequency
 FROM employees
 GROUP BY last_name
 ORDER BY frequency DESC;
+
+--
+SELECT * FROM employees
+WHERE emp_no=499942;
